@@ -4,9 +4,53 @@
   переключая тему
 */
 
+:root.theme-light {
+  /* Переменные светлой темы */   
+  --accent_color: #FFC2E6;
+  --main_color: #FF8DCB;
+  --paragraph_font_color: #353430;
+  --bg_color: #FFF1F7;
+  --font_header_color: #353430; 
+  --bg_image: url(../images/cover-image-light.png);
+  --button_color: #353430;
+}
+
+.decorative_sign {
+  display: none;
+}
+
+/* Остальные стили */
+
+@media (prefers-color-scheme: light) {
+:root {
+  --accent_color: #FFC2E6;
+  --main_color: #FF8DCB;
+  --paragraph_font_color: #353430;
+  --bg_color: #FFF1F7;
+  --font_header_color: #353430; 
+  --header_shadow_color: #FF0700;
+  --bg_image: url(../images/cover-image-light.png);
+  --button_color: #353430;
+  /* Дублируем переменные светлой темы */    
+  }
+}
+
+
+
+/* Остальные стили */
+
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent_color: #FFC2E6;
+  --main_color: #FF8DCB;
+  --paragraph_font_color: #353430;
+  --bg_color: #FFF1F7;
+  --font_header_color: #353430; 
+  --header_shadow_color: #FF0700;
+  --bg_image: url(../images/cover-image-light.png);
+  --button_color: #353430;
 }

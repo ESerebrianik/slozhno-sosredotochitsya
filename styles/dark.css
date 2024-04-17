@@ -4,6 +4,17 @@
   переключая тему
 */
 
+:root.theme-dark {
+  /* Дублируем переменные для тёмной темы */
+  --accent_color: #DB00FF;
+  --main_color: #FF0070;
+  --paragraph_font_color: #F1B2CE;
+  --bg_color: #000028;
+  --font_header_color: #000028;
+  --bg_image: url(../images/cover-image-dark.png);
+  --button_color: #ff0070;
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
