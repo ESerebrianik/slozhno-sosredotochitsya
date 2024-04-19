@@ -11,4 +11,15 @@
   --font_header_color: #000028;
   --bg_image: url(../images/cover-image-dark.png);
   --button_color: #ff0070;
+  --button_outline_color: rgba(255, 0, 112, 0.4);
+  --main_header_size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
+  --mh_shadow_color: #ff0070;
+  --theme_header_color: #ff0070;
+}
+
+@media (width >= 768px) {
+  :root {
+    --main_header_size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  }
 }
