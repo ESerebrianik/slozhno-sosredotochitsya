@@ -107,6 +107,14 @@
   outline: 1px solid currentColor;
 }
 
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
 .header__theme-menu-button_active {
   outline: 1px solid currentColor;
   pointer-events: none;
@@ -199,7 +207,7 @@
 }
 
 .link:focus {
-  display: none;
+  outline: none;
 }
 
 .link:focus-visible {

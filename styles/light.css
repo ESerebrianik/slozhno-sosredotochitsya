@@ -7,7 +7,7 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-  :root {
+  .theme_auto {
     --accent_color: #ffc2e6;
     --main_color: #ff8dcb;
     --paragraph_font_color: #353430;
@@ -25,6 +25,26 @@
   .theme_auto .decorative_sign {
     display: none;
   }
+
+  @media (width >= 1024px) {
+    :root {
+      --mh_shadow_color: #ff0700;
+    }
+  }
+
+  .page.theme_dark {
+    --accent_color: #db00ff;
+    --main_color: #ff0070;
+    --paragraph_font_color: #f1b2ce;
+    --bg_color: #000028;
+    --font_header_color: #000028;
+    --bg_image: url(../images/cover-image-dark.png);
+    --button_color: #ff0070;
+    --button_outline_color: rgba(255, 0, 112, 0.4);
+    --mh_shadow_color: #ff0070;
+    --theme_header_color: #ff0070;
+  }
+
 }
 
 
@@ -60,8 +80,3 @@
   }
 }
 
-@media (width >= 768px) {
-  :root {
-    --main_header_size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-}
