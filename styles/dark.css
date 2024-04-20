@@ -14,7 +14,24 @@
   --bg_image: url(../images/cover-image-dark.png);
   --button_color: #ff0070;
   --button_outline_color: rgba(255, 0, 112, 0.4);
+  --mh_shadow_color: #ff0070;
+  --theme_header_color: #ff0070;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent_color: #db00ff;
+    --main_color: #ff0070;
+    --paragraph_font_color: #f1b2ce;
+    --bg_color: #000028;
+    --font_header_color: #000028;
+    --bg_image: url(../images/cover-image-dark.png);
+    --button_color: #ff0070;
+    --button_outline_color: rgba(255, 0, 112, 0.4);
+    --mh_shadow_color: #ff0070;
+    --theme_header_color: #ff0070;
+    /* Дублируем переменные светлой темы */
+  }
 
 @media (width >= 768px) {
   :root {

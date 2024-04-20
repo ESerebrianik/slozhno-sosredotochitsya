@@ -21,11 +21,15 @@
     --theme_header_color: #353430;
     /* Дублируем переменные светлой темы */
   }
+
+  .theme_auto .decorative_sign {
+    display: none;
+  }
 }
 
-.decorative_sign {
-  display: none;
-}
+
+
+
 
 /* Остальные стили */
 
@@ -44,6 +48,10 @@
   --button_outline_color: rgba(50, 49, 45, 0.4);
   --mh_shadow_color: #ff8dcb;
   --theme_header_color: #353430;
+}
+
+.page.theme_light .decorative_sign {
+  display: none;
 }
 
 @media (width >= 1024px) {
