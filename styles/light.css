@@ -27,7 +27,7 @@
   }
 
   @media (width >= 1024px) {
-    :root {
+    .theme_auto {
       --mh_shadow_color: #ff0700;
     }
   }
