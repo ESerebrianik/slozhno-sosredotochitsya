@@ -292,7 +292,7 @@
 
   .why,
   .how {
-    grid-template-columns: calc(100vw / 3 - 20px) calc((100vw / 3 - 20px) * 2);
+    grid-template-columns: 1fr 2fr;
     align-self: baseline;
   }
 
